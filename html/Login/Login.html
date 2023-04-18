@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/img/Logo/TuksonSports.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>TuksonSports®</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img
+              class="img-logo"
+              src="/img/Logo/TuksonSports.-removebg-preview.png"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-25"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link rounded Efect-boton me-4 padding-sm"
+                  aria-current="page"
+                  href="/html/Contacto/Contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link Efect-boton rounded padding-sm"
+                  href="/html/SobreNosotros/SobreNosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end w-50"
+            >
+              <li class="nav-item rounded">
+                <i class="bi bi-cart icono-cart"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content fondo-modal">
+            <div class="modal-header">
+              <h1 class="modal-title text-white fs-5" id="exampleModalLabel">
+                Creá tu cuenta
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="InputEmail1" class="form-label"
+                    >Ingrese su correo</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="InputEmail1"
+                    placeholder="Example@email.com"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="InputPassword1" class="form-label"
+                    >Ingrese su contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="InputPassword1"
+                    placeholder="**********"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="InputPassword2" class="form-label"
+                    >Repita su contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="InputPassword2"
+                    placeholder="**********"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="Name" class="form-label">Ingrese su nombre</label>
+                  <input type="text" class="form-control" id="Name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="Apellido" class="form-label"
+                    >Ingrese su apellido</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Apellido"
+                    required
+                  />
+                </div>
+                <div class="d-flex justify-content-between modal-footer">
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      required
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Acepto los términos y condiciones
+                    </label>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-outline-primary">
+                      Registrarse
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <form>
+              <h2 class="aside-precio">Ingresá a tu cuenta</h2>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Correo Electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control input-login"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="@email.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control input-login"
+                  id="exampleInputPassword1"
+                  placeholder="***********"
+                  required
+                />
+              </div>
+              <div class="d-flex justify-content-center input-login">
+                <button type="submit" class="btn w-50 boton-login">
+                  Ingresar
+                </button>
+                <a href="SesionIniciada.html">.</a>
+              </div>
+              <div class="text-center my-2 w div-register">
+                <a
+                  class="btn boton-login"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  ¿No tenes cuenta? Registrate aquí.
+                </a>
+              </div>
+
+              <div class="d-flex my-3">
+                <aside
+                  class="mx-4 aside-login rounded-2 aside-login-g text-center"
+                >
+                  <a class="ms-1" href="/html/Error404/Error404.html"
+                    ><i class="bi bi-google"></i> Ingresá con Google</a
+                  >
+                </aside>
+                <aside
+                  class="ms-4 aside-login rounded-2 aside-login-fb text-center"
+                >
+                  <a class="ms-1" href="/html/Error404/Error404.html"
+                    ><i class="bi bi-facebook"></i> Ingresá con Facebook</a
+                  >
+                </aside>
+              </div>
+              <hr class="text-light" />
+              <div class="div-login-password rounded-2 ms-4 text-center">
+                <a
+                  href=""
+                  type=""
+                  class="a-recuperar-contraseña btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal1 "
+                >
+                  ¿Olvidaste tu contraseña? Haz click aquí para recuperarla
+                </a>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <aside class="d-flex justify-content-center aside-img">
+              <img
+                src="/img/Login/Campeones3.png"
+                class="rounded-5 img-login mb-4"
+                alt=""
+              />
+            </aside>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel1">
+                Ingrese su correo electrónico
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    required
+                    placeholder="Example@email.com"
+                  />
+                </div>
+                <div class="d-flex justify-content-end">
+                  <input type="submit" class="btn boton-card" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="py-3 bg-black">
+      <div class="w-100">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-3 text-center">
+              <img
+                src="/img/Logo/TuksonSports.-removebg-preview.png"
+                class="img-logo-footer"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+              <h4 class="text-dark">Seguínos en nuestras redes</h4>
+              <div class="Red-soc">
+                <a href=""><i class="bi bi-instagram fs-1 mx-3 ig"></i></a>
+                <a href=""><i class="bi bi-facebook fs-1 dlg-fb mx-3"></i></a>
+
+                <a href=""><i class="bi bi-twitter fs-1 dlg mx-3"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+              <h4 class="text-dark text-center">Horarios de atención</h4>
+              <div class="text-center">
+                <p class="text-dark">Lunes a Viernes de 8:00 HS a 20:00 HS</p>
+                <p class="text-dark">Sábados de 10:00HS a 15:00HS</p>
+                <p class="text-dark">
+                  Domingos y Feriados el local se encuentra cerrado
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
